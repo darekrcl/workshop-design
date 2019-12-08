@@ -3,56 +3,170 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>BestShop</title>
+    <meta name="author" content="Darek B">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+<!--navigation -->
     <nav class="nav">
         <div class="nav__inner-container inner-container">
-            <p class="nav__logo  font-raleway">BestShop</p>
+            <p class="logo logo--nav  font-raleway">BestShop</p>
             <ul class="nav__menu menu">
-                <li class="menu__item"><a class="menu__link center-text" href="/">WHY US</a></li>
-                <li class="menu__item"><a class="menu__link center-text" href="/">BENEFITS</a></li>
-                <li class="menu__item"><a class="menu__link center-text" href="/">PRICES</a></li>
-                <li class="menu__item"><a class="menu__link center-text" href="/">CONTACT</a></li>
+                <li class="menu__item"><a class="menu__link menu__link--active center-text font-raleway bold"
+                        href="/">WHY US</a></li>
+                <li class="menu__item"><a class="menu__link center-text font-raleway bold" href="/">BENEFITS</a></li>
+                <li class="menu__item"><a class="menu__link center-text font-raleway bold" href="/">PRICES</a></li>
+                <li class="menu__item"><a class="menu__link center-text font-raleway bold" href="/">CONTACT</a></li>
             </ul>
         </div>
     </nav>
+<!-- header -->
     <header class="header">
         <div class="header__inner-container inner-container">
             <h1 class="center-text">Sell More!</h1>
             <p class="center-text">Open shop on our platform and increase your sales</p>
-            <a href="/" class="header__button button center-text">Open your shop</a>
+            <a href="/" class="header__button button button--shadow center-text">Open your shop</a>
         </div>
     </header>
+<!-- section statistics -->
     <section class="statistics">
         <div class="statistics-container inner-container">
             <h2 class="font-raleway center-text">The most popular sales platform in country</h2>
             <article class="statistics__article statistics__article--first">
                 <figure>
                     <img src="assets/Person.svg" alt="person icon">
-                    <figcaption>100000+</figcaption>
                 </figure>
-                <p>daily entries</p>
+                <p class="center-text">100000+</p>
+                <p class="center-text">daily entries</p>
             </article>
             <article class="statistics__article statistics__article--second">
                 <figure>
                     <img src="assets/Eye.svg" alt="eye icon">
-                    <figcaption>2000000+</figcaption>
                 </figure>
-                <p>seen products every day</p>
+                <p class="center-text">2000000+</p>
+                <p class="center-text">seen products every day</p>
             </article>
             <article class="statistics__article statistics__article--third">
                 <figure>
                     <img src="assets/Catalog.svg" alt="catalog icon">
-                    <figcaption>10000+</figcaption>
                 </figure>
-                <p>added posts daily</p>
+                <p class="center-text">10000+</p>
+                <p class="center-text">added posts daily</p>
             </article>
         </div>
     </section>
+<!-- section benefits -->
+    <section class="benefits">
+        <div class="benefits-container inner-container">
+            <section class="benefit">
+                <article class="benefit__article">
+                    <h2 class="font-raleway benefit__title">Be always first</h2>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class= "horizontalLine"></div>
+                </article>
+                <figure class="benefit__figure"><img class="benefit__img" src="assets/Macbook.png" alt=""></figure>
+            </section>
+            <section class="benefit">
+                <article class="benefit__article">
+                    <h2 class="font-raleway benefit__title">Your shop is where you are!</h2>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class= "horizontalLine"></div>
+                </article>
+                <figure class="benefit__figure"><img class="benefit__img" src="assets/iPhone.png" alt="iPhone"></figure>
+            </section>
 
+            <article class="benefit__article benefit__article--separate">
+                <h2 class="font-raleway benefit__title">Increase recognition your brand!</h2>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class= "horizontalLine"></div>
+            </article>
+            <figure class="benefit__figure benefit__figure--separate"><img class="benefit__img" src="assets/Trumpet.png" alt="Trumpet"></figure>
+        </div>
+    </section>
+<!-- section pricing -->
+    <section class="pricing">
+        <div class="pricing-container inner-container">
+            <h2 class="pricing__header font-raleway center-text">Pricing</h2>
+            <article class="pricing__article center-text">
+                <h3 class="bold">Basic</h3>
+                <p class="pricing__price">$0</p>
+                <p class="pricing__limited font-raleway center-text bold">&nbsp;</p>
+                <p class="pricing__contain pricing__checked">100 MB HDD</p>
+                <p class="pricing__contain pricing__checked">1 Subdomain</p>
+                <p class="pricing__contain pricing__checked">2 E-mails</p>
+                <p class="pricing__contain pricing__checked pricing__checked--unchecked">Two years license</p>
+                <p class="pricing__contain pricing__checked pricing__checked--unchecked">Full support</p>
+                <a href="/" class="pricing__button button center-text ">Begin</a>
+            </article>
+            <article class="pricing__article center-text">
+                <h3 class="font-raleway center-text bold">Professional</h3>
+                <p class="pricing__price">$25</p>
+                <p class="pricing__limited font-raleway center-text bold">Limited offer</p>
+                <p class="pricing__contain pricing__checked">500 MB HDD</p>
+                <p class="pricing__contain pricing__checked">2 Subdomain</p>
+                <p class="pricing__contain pricing__checked">5 E-mails</p>
+                <p class="pricing__contain pricing__checked">One year license</p>
+                <p class="pricing__contain pricing__checked pricing__checked--unchecked">Full support</p>
+                <a href="/" class="pricing__button button button--shadow center-text ">Begin</a>
+            </article>
+            <article class="pricing__article center-text">
+                <h3 class="font-raleway center-text bold">Premium</h3>
+                <p class="pricing__price">$60</p>
+                <p class="pricing__limited font-raleway center-text bold">Limited offer</p>
+                <p class="pricing__contain pricing__checked">2 GB HDD</p>
+                <p class="pricing__contain pricing__checked">5 Subdomain</p>
+                <p class="pricing__contain pricing__checked">20 E-mails</p>
+                <p class="pricing__contain pricing__checked">Two years license</p>
+                <p class="pricing__contain pricing__checked">Full support</p>
+                <a href="/" class="pricing__button button center-text ">Begin</a>
+            </article>
+        </div>
+    </section>
+<!-- section questions -->
+    <section class="questions">
+        <div class="questions-container inner-container">
+            <article class="questions__article">
+                <h2>Any questions?</h2>
+                <p>Leave your email address or call us!</p>
+                <p class="questions__contact">
+                        <img src="assets/Mail Icon.svg" alt="mail icon">
+                    <span class="questions__mail">info@bestshop.xyz &nbsp;</span>
+                    <img src="assets/Phone Icon.svg" alt="phone icon">
+                    <span class="questions__tel">123 456 789</span>
+                </p>
+            </article>
+            <form action="/" class="questions__form">
+                <label for="userName" class="bold">NAME</label>
+                <input type="text" name="userName" id="userName">
+                <label for="userEmail" class="bold">EMAIL</label>
+                <input type="text" name="userEmail" id="userEmail">
+                <input type="checkbox" name="agree" id="agree" checked>
+                <label for="agree">I hereby give consent for my personal data included in my application to be processed
+                    for the purposes of the recruitment process under the European Parliament’s and Council of the
+                    European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to
+                    the processing of personal data and on the free movement of such data, and repealing Directive
+                    95/46/EC (Data Protection Directive)</label>
+                <button class="questions__button button button--shadow center-text bold">Send</button>
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container inner-container">
+            <section class="footer__copyright">
+                    <p class="logo logo--footer font-raleway">BestShop</p>
+                    <p class="footer__copyright__text">
+                            &copy; 2019 BestShop LTD, All Rights Reserved
+                    </p>
+            </section>
+            <section class="footer__social">
+                <img src="assets/Twitter.svg" alt="twitter logo">
+                <img src="assets/Facebook.svg" alt="facebook logo">
+            </section>
+        </div>
+    </footer>
 </body>
 
 </html>
