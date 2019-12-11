@@ -3,6 +3,8 @@
 
 :root {
     --highlight-color: #08A6E4;
+    --second-color: #FB3B64;
+    --third-color: #55DFB4;
     /* --shadow-color: #07ACE629; */
 }
 
@@ -189,7 +191,7 @@ header .button:hover,
 }
 
 .statistics__article--first figure::before {
-    background-color: #FB3B64;
+    background-color: var(--second-color);
 }
 
 .statistics__article--second figure::before {
@@ -197,7 +199,7 @@ header .button:hover,
 }
 
 .statistics__article--third figure::before {
-    background-color: #55DFB4;
+    background-color: var(--third-color);
 }
 
 .statistics p {
@@ -222,7 +224,6 @@ header .button:hover,
 .benefit:nth-last-of-type(1) {
     flex-direction: row-reverse;
 }
-
 
 .benefit {
     background-color: #fff;
@@ -252,44 +253,54 @@ header .button:hover,
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: relative;
     z-index: 10;
 }
 
-.benefit:nth-of-type(1) .benefit__figure::before {
-    content: "";
-    display: block;
-    background-color: #FB3B64;
-    transform: rotate(45deg);
-    width: 170px;
-    height: 170px;
-    position: absolute;
-    left: 140px;
-    top: 55px;
-    border-radius: 20%;
-    z-index: -5;
+/* uzależniam wymiary div i obrazka od szerokości viewport, div w figure */
+.benefit div {
+    width: 20vw;
+    position: relative;
 }
 
-.benefit:nth-of-type(2) .benefit__figure::before {
+.benefit:nth-of-type(1) div::before {
+    content: "";
+    display: block;
+    background-color: var(--second-color);
+    transform: rotate(45deg);
+    position: absolute;
+    border-radius: 20%;
+    z-index: -5;
+    width: 10vw;
+    height: 10vw;
+    right: 0;
+    top: -2vw;
+}
+
+.benefit:nth-of-type(1) img {
+    width: 20vw;
+}
+
+.benefit:nth-of-type(2) div::before {
     content: "";
     display: block;
     background-color: var(--highlight-color);
     transform: rotate(45deg);
-    width: 280px;
-    height: 280px;
     position: absolute;
-    top: 40px;
     border-radius: 50%;
     z-index: -5;
+    width: 13vw;
+    height: 13vw;
+    left: 1vw;
+    top: -1vw;
 }
 
 .benefit:nth-of-type(2) img {
-    margin-left: 20px;
-    width: 70%;
+    margin-left: 1vw;
+    width: 17vw;
 }
 
 .benefit__img {
-    width: 60%;
+    width: 100%;
     display: block;
 }
 
@@ -304,7 +315,7 @@ header .button:hover,
 }
 
 .benefit__article--separate .horizontalLine {
-    border-color: #55DFB4;
+    border-color: var(--third-color);
 }
 
 .benefit__article--separate {
@@ -313,7 +324,7 @@ header .button:hover,
 }
 
 .benefit__figure--separate {
-    background-color: #55DFB4;
+    background-color: var(--third-color);
     flex-basis: 40%;
     justify-content: center;
 }
@@ -345,27 +356,27 @@ header .button:hover,
 }
 
 .pricing__article:nth-of-type(1) {
-    border-color: #FB3B64;
+    border-color: var(--second-color);
 }
 
 .pricing__article:nth-of-type(1) .pricing__price {
-    color: #FB3B64;
+    color: var(--second-color);
 }
 
 .pricing__article:nth-of-type(1) .button {
-    background-color: #FB3B64;
+    background-color: var(--second-color);
 }
 
 .pricing__article:nth-of-type(3) {
-    border-color: #55DFB4;
+    border-color: var(--third-color);
 }
 
 .pricing__article:nth-of-type(3) .pricing__price {
-    color: #55DFB4;
+    color: var(--third-color);
 }
 
 .pricing__article:nth-of-type(3) .button {
-    background-color: #55DFB4;
+    background-color: var(--third-color);
 }
 
 .pricing__article:nth-of-type(2) {
@@ -406,11 +417,10 @@ header .button:hover,
 
 .pricing__checked::before {
     content: "v";
-    /* display: inline-block; */
     font-size: 11px;
     padding: 0 .4em;
-    color: #55DFB4;
-    border: 1px solid #55DFB4;
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
     border-radius: .3em;
     line-height: 0;
     margin-right: 1em;
@@ -433,7 +443,6 @@ header .button:hover,
 .questions-container>* {
     margin: 0 1em;
     flex-basis: 35%;
-
 }
 
 .questions__article h2 {
@@ -447,7 +456,6 @@ header .button:hover,
 
 .questions__contact {
     display: flex;
-    /* justify-content: space-around; */
 }
 
 .questions__contact>* {
@@ -470,7 +478,6 @@ header .button:hover,
 }
 
 .questions__form * {
-    /* display: block; */
     width: 100%;
 }
 
