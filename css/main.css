@@ -416,7 +416,7 @@ header .button:hover,
 }
 
 .pricing__checked::before {
-    content: "v";
+    content: "\02713";
     font-size: 11px;
     padding: 0 .4em;
     color: var(--third-color);
